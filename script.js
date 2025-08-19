@@ -112,7 +112,7 @@ function clearRows() {
     }
   }
   score += lines*50;
-  document.getElementById('score').innerText = `Punkte: ${score}`;
+  document.getElementById('score').innerText = `Dina poäng: ${score}`;
 }
 
 // Figur rotieren
@@ -132,7 +132,7 @@ function drop() {
     current.x = Math.floor(COLS/2) - Math.floor(current.shape[0].length/2);
     current.y = 0;
     if(collision(0,0)){
-      alert(`Game Over! Punkte: ${score}`);
+      alert(`Game Over! Dina poäng: ${score}`);
       gameOver = true;
     }
   }
@@ -161,3 +161,4 @@ function update() {
 }
 
 update();
+
